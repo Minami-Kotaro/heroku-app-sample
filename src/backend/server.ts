@@ -1,12 +1,10 @@
 import express, { Request, Response, NextFunction } from "express";
 import helmet from "helmet";
-import cors from "cors";
 import router from "./router";
 import path from "path";
 
 const app = express();
 app.use(helmet());
-app.use(cors());
 app.use(
   express.urlencoded({
     extended: true,
