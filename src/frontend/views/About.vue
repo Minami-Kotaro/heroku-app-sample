@@ -31,7 +31,9 @@ export default class extends Vue {
 
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   async created() {
-    const res = await axios.get("http://localhost:3000/api/version");
+    const res = await axios.get(
+      "https://heroku-app-sample-minami.herokuapp.com/api/version"
+    );
     this.memos = res.data.map(
       (x: { id: number; title: string; text: string }) => ({
         id: x.id,
