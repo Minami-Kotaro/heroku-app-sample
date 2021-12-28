@@ -8,7 +8,9 @@
     "build:frontend": "vue-cli-service build",
     "watch:backend": "tsc-watch -b tsconfig.backend.json",
     "build:backend": "tsc -b tsconfig.backend.json",
-    "serve:backend": "nodemon ./dist/server.js"
+    "serve:backend": "nodemon ./dist/server.js",
+    "build":"npm-p build:frontend build:backend",
+    "start":"node ./dist/server.js"
   },
   "dependencies": {
     "@types/compression": "^1.7.2",
@@ -52,6 +54,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^6.2.2",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.2.1",
     "typescript": "~4.1.5",
     "vue-template-compiler": "^2.6.11"
