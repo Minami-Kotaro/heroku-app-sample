@@ -9,7 +9,7 @@
     "watch:backend": "tsc-watch -b tsconfig.backend.json",
     "build:backend": "tsc -b tsconfig.backend.json",
     "serve:backend": "nodemon ./dist/server.js",
-    "build":"npm-p build:frontend build:backend",
+    "build":"run-p build:frontend build:backend",
     "start":"node ./dist/server.js"
   },
   "dependencies": {
