@@ -41,6 +41,7 @@ export default class extends Vue {
         text: x.text,
       })
     );
+    console.log(process.env);
   }
 }
 </script>
